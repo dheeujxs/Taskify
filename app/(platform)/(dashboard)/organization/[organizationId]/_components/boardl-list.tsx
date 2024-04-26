@@ -2,7 +2,7 @@ import Link from "next/link";
 import { User2 } from "lucide-react";
 
 import { MAX_FREE_BOARDS } from "@/constansts/boards";
-import { getBoard } from "@/lib/get-boards";
+import { getBoards } from "@/lib/get-boards";
 import { FormPopover } from "@/components/form/form-popover";
 import { Skeleton } from "@/components/ui/skeleton";
 
@@ -17,7 +17,7 @@ export const BoardList = async ({
   availableCount,
   isPro,
 }: BoardListProps) => {
-  const boards = await getBoard(orgId);
+  const boards = await getBoards(orgId);
 
   return (
     <div className="space-y-4">
