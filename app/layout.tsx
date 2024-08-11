@@ -6,6 +6,8 @@ import { siteConfig } from "@/config/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
+<my-widget project="125"></my-widget>
+<script src="https://nexx-widget.vercel.app/widget.umd.js"></script>
 export const metadata: Metadata = {
   title: {
     default: siteConfig.name,
